@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <br><br><br><br><br>
+    <h1>UPDATE INFO</h1>
+    <form method="post" >
+      taskname =<input type="text" name="taskname" value="{{tasklist.taskname}}"><br>
+      deadline =<input type="text" name="taskname" value="{{tasklist.deadline}}"><br>
+      completed= <input type="text" name="completed" value="{{tasklist.completed}}">
+
+      <input type="submit" name="submit" value="submit"><br>
+      {% csrf_token %}
+    </form>
+
+  </body>
+</html>
